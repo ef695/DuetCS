@@ -13,14 +13,17 @@
 ## Prepare data and generating feature embedding
 
 encode the original raw code to initial vector
+
 `python3 data_prepare.py`
 
 generate the initial feature embedding
+
 `python3 feature.py`
 
 ## Train siamese network for the classification task
 
 `python3 siamese.py`
+
 `python3 training.py`
 
 ## Create feature embedding for input code/code examples in target style
@@ -30,8 +33,10 @@ generate the initial feature embedding
 ## Output results through two modes
 
 generate transferred code through LSTM
+
 `python 3 generation.py`
 
 retrieve transferred code for the database and compare with geneartion mode to output the final result
+
 `sh translate_retrieval.sh path_to_input target_language`
 
